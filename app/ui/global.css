@@ -16,3 +16,7 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+/* dar color al body*/
+body {
+  background: #e1eaf0;
+}
