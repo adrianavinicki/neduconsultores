@@ -1,4 +1,4 @@
-/*import {
+import {
   UserGroupIcon,
   HomeIcon,
   DocumentDuplicateIcon,
@@ -7,13 +7,16 @@
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
 const links = [
-  { name: 'Home', href: '/dashboard', icon: HomeIcon },
+  { name: 'Inicio', href: '/dashboard', icon: HomeIcon },
   {
-    name: 'Invoices',
-    href: '/dashboard/invoices',
+    name: 'Acerca de',
+    href: '/dashboard/about',
     icon: DocumentDuplicateIcon,
   },
+  { name: 'Servicios', href: '/dashboard/services', icon: UserGroupIcon },
+  { name: 'Capacitación', href: '/dashboard/learning', icon: UserGroupIcon },
   { name: 'Customers', href: '/dashboard/customers', icon: UserGroupIcon },
+  { name: 'Contacto', href: '/dashboard/mail', icon: UserGroupIcon },
 ];
 
 export default function NavLinks() {
@@ -25,7 +28,7 @@ export default function NavLinks() {
           <a
             key={link.name}
             href={link.href}
-            className="flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3"
+            className="flex h-[68px] w-[150px] grow items-center justify-center rounded-md bg-transparent p-3 text-sm font-medium hover:bg-sky-100 hover:text-cyan-600 text-black-700 md:flex-none md:justify-start md:p-2 md:px-3"
           >
             <LinkIcon className="w-6" />
             <p className="hidden md:block">{link.name}</p>
@@ -34,4 +37,4 @@ export default function NavLinks() {
       })}
     </>
   );
-}*/
+}

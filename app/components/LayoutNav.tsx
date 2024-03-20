@@ -1,4 +1,4 @@
-//fonts
+/*fonts
 
 import { montserrat } from "../ui/fonts";
 
@@ -6,7 +6,7 @@ import { montserrat } from "../ui/fonts";
   subsets: ["latin"],
   variable: "--font-sora",
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-});*/
+});
 
 //components
 import Nav from "../components/Nav";
@@ -24,10 +24,10 @@ const LayoutNav: React.FC<LayoutProps> = ({ children }) => {
     >
       <Nav />
       {/*<Header />
-      <TopLeftImg />*/}
+      <TopLeftImg />
       {children}
     </div>
   );
 };
 
-export default LayoutNav;
+export default LayoutNav;*/
